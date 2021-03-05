@@ -1,0 +1,33 @@
+Welcome to Scala 2.13.5 (OpenJDK 64-Bit Server VM, Java 15.0.1).
+Type in expressions for evaluation. Or try :help.
+
+scala> println(s"Hello Thi ${Саша}")
+                             ^
+       error: not found: value ????
+
+scala> val Саша = "Саш"
+val ????: String = ???
+
+scala> println(s"Hello Thi ${Саша}")
+Hello Thi ���
+
+scala> val ItsMe = "Саш"
+val ItsMe: String = ???
+
+scala> println(s"Hello Thi ${ItsMe}")
+Hello Thi ���
+
+scala> ItsMe = "Aleksandr"
+             ^
+       error: reassignment to val
+
+scala> val ItsMe = "Aleksandr"
+val ItsMe: String = Aleksandr
+
+scala> println(s"Hello Thi ${ItsMe}")
+Hello Thi Aleksandr
+
+scala> println(s"Hello This is  ${ItsMe}")
+Hello This is  Aleksandr
+
+scala>
